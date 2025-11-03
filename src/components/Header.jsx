@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <div className="header mt-[6rem] flex items-center justify-center flex-col">
-        <h1 className="text-[3.2rem] leading-10 md:text-[4.5rem] px-3 text-center font-hezargan">
+        <h1 className="text-[3.2rem] leading-[3rem] md:text-[4.5rem] px-3 text-center font-hezargan">
           خواب راحت و آسوده با آرامیس
         </h1>
         <p className="text-center px-10 text-zinc-500 my-5">
