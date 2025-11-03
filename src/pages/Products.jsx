@@ -5,7 +5,7 @@ import { HiShieldCheck } from "react-icons/hi";
 import Footer from "../components/Footer";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { BsQuestionSquareFill, BsSortDownAlt } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
 import { products } from "../db.json";
 
@@ -24,7 +24,11 @@ let infoDatas = [
 export default function Products() {
   let productID = useParams().ProductsId;
   const product = products.find((p) => p.id == productID);
-  window.scrollTo(0,0)
+ 
+
+  useEffect(()=>{
+     window.scrollTo(0,0)
+  },[])
 
   const [count, setCount] = useState(1);
   const [tab, setTab] = useState(1);
