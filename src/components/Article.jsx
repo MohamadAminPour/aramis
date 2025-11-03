@@ -44,7 +44,7 @@ export default function Article() {
   return (
     <>
       <div className="flex items-center justify-center flex-col mt-20 py-3">
-        <div className="w-[80%] mb-10 flex items-center">
+        <div className="w-[90%] md:w-[80%] mb-10 flex items-center">
           <GrArticle className="size-6 ml-2 bg-primary3 p-2 w-[2.5rem] h-[2.5rem] rounded-md" />
           <div>
             <p className="text-[1.3rem]">وبلاگ آموزشی آرامیس</p>
@@ -53,7 +53,7 @@ export default function Article() {
             </p>
           </div>
         </div>
-        <ul className="w-[80%] mb-10 grid grid-cols-4 gap-3">
+        <ul className="w-[90%] md:w-[80%] mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
           {articles.map((article) => (
             <ArticleItem article={article} key={article.id} />
           ))}

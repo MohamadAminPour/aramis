@@ -6,7 +6,7 @@ export default function CategoryItem({ Categories }) {
       {Categories.map((Category) => (
         <NavLink key={Category.id}
           to="/Search"
-          className="relative catItem px-5 rounded-lg bg-primary3 flex items-center justify-between overflow-hidden"
+          className="relative h-[8rem] catItem px-5 rounded-lg bg-primary3 flex items-center justify-between overflow-hidden"
         >
           <div className="bg-primary2 catOverlay duration-500 absolute h-full w-[5rem] left-0 rounded-tr-[1.9rem] rounded-br-[1.9rem]"></div>
           <div className="text-right">

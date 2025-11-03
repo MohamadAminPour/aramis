@@ -1,18 +1,19 @@
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 export default function Product({ product }) {
   return (
     <>
-      <NavLink
+      <Link
         key={product.id}
         to={`Products/${product.id}`}
-        className="p-4 rounded-lg bg-zinc-50 shadow-lg w-[18rem] hover:scale-105 inline-block"
+        className="p-4 rounded-lg bg-zinc-50 shadow-lg min-w-[18rem] hover:scale-105 inline-block"
       >
         <div className="">
           <img
             src={product.src}
-            className="h-[10rem] w-full rounded-md mb-3 object-cover"
+            className="h-[15rem] md:h-[12rem] w-full rounded-md mb-3 object-cover"
             alt=""
           />
         </div>
@@ -50,7 +51,7 @@ export default function Product({ product }) {
             <FaStar className="size-6 fill-yellow-500" />
           </div>
         </div>
-      </NavLink>
+      </Link>
     </>
   );
 }

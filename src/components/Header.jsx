@@ -6,8 +6,8 @@ import { MdSupportAgent } from "react-icons/md";
 export default function Header() {
   return (
     <>
-      <div className="header mt-10 flex items-center justify-center flex-col">
-        <h1 className="text-[4.5rem] text-center font-hezargan">
+      <div className="header mt-[6rem] flex items-center justify-center flex-col">
+        <h1 className="text-[3.5rem] md:text-[4.5rem] text-center font-hezargan">
           خواب راحت و آسوده با آرامیس
         </h1>
         <p className="text-center text-zinc-500 mb-5">
@@ -27,41 +27,43 @@ export default function Header() {
             className="w-[80%] h-[80%] object-cover"
           />
 
-          <div className="w-[100%] bg-black absolute bottom-[5%] rounded-xl flex items-center justify-between px-4">
-            <div className="flex items-center justify-center rounded-md p-4">
-              <FaCreditCard className="size-6 bg-slate-700 text-white w-[2.7rem] h-[2.7rem] p-2 rounded-md" />
-
+          <ul className="w-full grid grid-cols-2 lg:grid-cols-3 gap-3 px-4 static md:absolute -bottom-[70%] md:bottom-[5%]">
+            {/* کارت ۱ */}
+            <li className="flex items-center rounded-md py-2 px-2 bg-black">
+              <FaCreditCard className="bg-slate-700 text-white w-[2.7rem] h-[2.7rem] p-2 rounded-md" />
               <div className="mr-2">
                 <p className="text-slate-200 text-[.9rem]">پرداخت آسان</p>
                 <span className="text-zinc-500 text-[.8rem]">
-                  پرداخت سریع و امن در 1 دقیقه
+                پرداخت در کمترین زمان
                 </span>
               </div>
-            </div>
-            <div className="flex items-center justify-center rounded-md p-1">
-              <FaTruckFast className="size-6 bg-slate-700 text-white w-[2.7rem] h-[2.7rem] p-2 rounded-md" />
+            </li>
 
+            {/* کارت ۲ */}
+            <li className="flex items-center rounded-md py-2 px-2 bg-black">
+              <FaTruckFast className="bg-slate-700 text-white w-[2.7rem] h-[2.7rem] p-2 rounded-md" />
               <div className="mr-2">
                 <p className="text-slate-200 text-[.9rem]">ارسال به موقع</p>
                 <span className="text-zinc-500 text-[.7rem]">
-                  در عرض سه روز محصول به دستتان می رسد
+                  ارسال در کمترین زمان
                 </span>
               </div>
-            </div>
-            <div className="flex items-center justify-center rounded-md p-1">
-              <MdSupportAgent className="size-6 bg-slate-700 text-white w-[2.7rem] h-[2.7rem] p-2 rounded-md" />
+            </li>
 
+            {/* کارت ۳ */}
+            <li className="flex items-center rounded-md py-2 px-2 bg-black col-span-2 lg:col-span-1">
+              <MdSupportAgent className="bg-slate-700 text-white w-[2.7rem] h-[2.7rem] p-2 rounded-md" />
               <div className="mr-2">
                 <p className="text-slate-200 text-[.9rem]">پشتیبانی آنلاین</p>
                 <span className="text-zinc-500 text-[.7rem]">
                   جواب گوی سوالات شما هستیم
                 </span>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-        <a href="#Category" className="mt-3">
-          <IoChevronDown />
+        <a href="#Category" className="mt-10 animate-bounce">
+          <IoChevronDown className="2rem" />
         </a>
       </div>
     </>

@@ -10,7 +10,7 @@ export default function ArticleItem({article}) {
               <img
                 src={article.src}
                 alt=""
-                className="w-full h-[10rem] mb-3 rounded-lg object-cover"
+                className="w-full h-[14rem] md:h-[12rem] mb-3 rounded-lg object-cover"
               />
             </div>
             <div>

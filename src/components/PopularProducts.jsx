@@ -1,49 +1,52 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Product from "./Product";
 import { Autoplay } from "swiper/modules";
 import { FaRegHeart } from "react-icons/fa";
+import Product from "./Product";
 import { products } from "../db.json";
-
 
 export default function PopularProducts() {
   return (
-    <>
-      <div
-        id="PopularProducts"
-        className="flex items-center justify-center flex-col mt-24 py-3"
-      >
-        <div className="w-[80%] flex items-center">
-        <FaRegHeart className="size-6 ml-2 bg-primary3 p-2 w-[2.5rem] h-[2.5rem] rounded-md" />
-
-
-          <div>
-            <p className="text-[1.3rem]">محصولات جدید</p>
-            <p className="text-[.8rem] text-zinc-500">
-              جدید ترین کالا های آرامیس را مشاهده کنید !
-            </p>
-          </div>
-        </div>
-        <div className="w-[80%]">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={20}
-            slidesPerView={4}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            style={{padding:'2rem 0'}}
-            loop={true}
-          >
-            {products.map((product) => (
-              <SwiperSlide key={product.id}>
-                <Product product={product} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+    <section
+      id="PopularProducts"
+      className="flex flex-col items-center justify-center mt-24 py-5"
+    >
+      {/* عنوان بخش */}
+      <div className="w-[90%] max-w-6xl flex items-center mb-4">
+        <FaRegHeart className="bg-primary3 p-2 w-[2.5rem] h-[2.5rem] rounded-md ml-2" />
+        <div>
+          <p className="text-[1.3rem] font-semibold">محصولات جدید</p>
+          <p className="text-[0.85rem] text-zinc-500">
+            جدیدترین کالاهای آرامیس را مشاهده کنید!
+          </p>
         </div>
       </div>
-    </>
+
+      {/* اسلایدر محصولات */}
+      <div className="w-[90%] max-w-6xl">
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            // موبایل
+            0: { slidesPerView: 1 },
+            // تبلت
+            768: { slidesPerView: 2 },
+            // دسکتاپ
+            1024: { slidesPerView: 4 },
+          }}
+          style={{ padding: "2rem 0" }}
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <Product product={product} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
   );
 }

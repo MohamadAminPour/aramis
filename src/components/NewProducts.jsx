@@ -8,7 +8,7 @@ export default function NewProducts() {
     <>
       <div
         id="NewProducts"
-        className="flex items-center justify-center flex-col mt-20 py-3"
+        className="flex items-center justify-center flex-col py-[5rem]"
       >
         <div className="w-[80%] mb-10 flex items-center">
           <HiOutlineSpeakerphone className="size-6 ml-2 bg-primary3 p-2 w-[2.5rem] h-[2.5rem] rounded-md" />
@@ -20,7 +20,7 @@ export default function NewProducts() {
             </p>
           </div>
         </div>
-        <ul className="w-[80%] grid grid-cols-4 gap-5">
+        <ul className="w-[90%] md:w-[80%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {products.map((product) => (
             <Product product={product} key={product.id} />
           ))}

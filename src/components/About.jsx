@@ -15,7 +15,7 @@ export default function About() {
           <span className="text-primary text-[1.4rem]">آرامیس</span> تجربه
           خواهید کرد چون...
         </p>
-        <div className="w-[80%] grid grid-cols-3 gap-5">
+        <div className="w-[90%] md:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="bg-primary3 p-5 rounded-lg">
             <GrAtm className="text-[1.6rem] text-primary" />
             <p className="my-2">پرداخت امن با درگاه امن</p>
