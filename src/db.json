@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "tornado",
+      "fnamelname": "mohammad amin pour",
+      "email": "tornado@gmail.com",
+      "password": "123456",
+      "level": "0"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "مبل ها",
+      "rate": "4.3",
+      "price": 11370000,
+      "offer": 100,
+      "src": "../public/images/bed1.png"
+    },
+    {
+      "id": 2,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "تشک ها",
+      "rate": "4.3",
+      "price": 13500000,
+      "offer": 10,
+      "src": "../public/images/bed4.png"
+    },
+    {
+      "id": 3,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "پتو ها",
+      "rate": "4.3",
+      "price": 7500000,
+      "offer": 10,
+      "src": "../public/images/pillow3.png"
+    },
+    {
+      "id": 4,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "مبل ها",
+      "rate": "4.3",
+      "price": 12750000,
+      "offer": 10,
+      "src": "../public/images/bed6.png"
+    },
+    {
+      "id": 5,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "رو مبلی",
+      "rate": "4.3",
+      "price": 1370000,
+      "offer": 10,
+      "src": "../public/images/pillow5.png"
+    },
+    {
+      "id": 6,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "مبل ها",
+      "rate": "4.3",
+      "price": 5650000,
+      "offer": 10,
+      "src": "../public/images/bed8.png"
+    },
+    {
+      "id": 7,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "بالش ها",
+      "rate": "4.3",
+      "price": 10700000,
+      "offer": 10,
+      "src": "../public/images/bed10.png"
+    },
+    {
+      "id": 8,
+      "title": "مبل راحتی 8 نفره",
+      "subTitle": "مبلی به نرمی پر قو به همراه 10 عدد بالش مبل و دارای 18 ماه ضمانت شرکتی است.",
+      "category": "پتو ها",
+      "rate": "4.3",
+      "price": 5740000,
+      "offer": 10,
+      "src": "../public/images/pillow8.png"
+    }
+  ]
+}
