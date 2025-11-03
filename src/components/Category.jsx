@@ -5,37 +5,37 @@ let Categories = [
     id: 1,
     title: "تشک ها",
     subTitle: "بیش از هزار مدل تشک",
-    src: "../public/images/bed.png",
+    src: "/images/bed.png",
   },
   {
     id: 2,
     title: "بالش ها",
     subTitle: "بیش از هزار مدل بالش",
-    src: "../public/images/pillow9.webp",
+    src: "/images/pillow9.webp",
   },
   {
     id: 3,
     title: "پتو ها",
     subTitle: "بیش از هزار مدل پتو",
-    src: "../public/images/patoo.webp",
+    src: "/images/patoo.webp",
   },
   {
     id: 4,
     title: "رو مبلی",
     subTitle: "بیش از هزار مدل رومبلی",
-    src: "../public/images/romobli.webp",
+    src: "/images/romobli.webp",
   },
   {
     id: 5,
     title: "لحاف ها",
     subTitle: "بیش از هزار مدل لحاف",
-    src: "../public/images/lahaf.webp",
+    src: "/images/lahaf.webp",
   },
   {
     id: 6,
     title: "بالش مبل",
     subTitle: "بیش از هزار مدل بالش مبل",
-    src: "../public/images/kosan.webp",
+    src: "/images/kosan.webp",
   },
 ];
 

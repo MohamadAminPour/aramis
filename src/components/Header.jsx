@@ -22,7 +22,7 @@ export default function Header() {
         </a>
         <div className="flex items-center justify-center flex-col mt-10 relative">
           <img
-            src="../public/images/hiro.png"
+            src="/images/hiro.png"
             alt=""
             className="w-[80%] h-[80%] object-cover"
           />

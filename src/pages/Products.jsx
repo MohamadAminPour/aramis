@@ -1,14 +1,12 @@
 import Menu from "../components/Menu";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { HiShieldCheck } from "react-icons/hi";
 import Footer from "../components/Footer";
-import { GoInfo } from "react-icons/go";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { BsQuestionSquareFill, BsSortDownAlt } from "react-icons/bs";
 import { useState } from "react";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
-import { MdKeyboardArrowLeft } from "react-icons/md";
 import { products } from "../db.json";
 
 let infoDatas = [
